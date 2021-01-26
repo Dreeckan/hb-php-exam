@@ -26,3 +26,10 @@
     include '4-html.php';
 
     echo '<hr />';
+
+    /*
+        EXO-6
+    */
+    include '6-objets.php';
+
+    echo '<hr />';

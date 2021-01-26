@@ -90,18 +90,18 @@ Liste des exercices
 - Dans le dossier `classes/Game` ( /!\ le sous-dossier est important)
 
   - Créer une classe abstraite `AbstractGame` dans son propre fichier avec les propriétés suivantes (définies en `protected`)
-    - [ ] `name` de type `string`
-    - [ ] `price` de type `float`
-  - [ ] Écrire les getters et les setters de ces propriétés
-  - [ ] En commentaire de la classe, expliquer avec vos mots ce qu'est une classe abstraite
-  - [ ] Ajouter des annotations (commentaires) aux propriétés et aux méthodes
-  - [ ] Créer une classe `VideoGame` (jeu vidéo) qui étend cette `AbstractGame`
-  - [ ] Créer une classe `BoardGame` (jeu de société) qui étend cette `AbstractGame`
+    - [x] `name` de type `string`
+    - [x] `price` de type `float`
+  - [x] Écrire les getters et les setters de ces propriétés
+  - [x] En commentaire de la classe, expliquer avec vos mots ce qu'est une classe abstraite
+  - [x] Ajouter des annotations (commentaires) aux propriétés et aux méthodes
+  - [x] Créer une classe `VideoGame` (jeu vidéo) qui étend cette `AbstractGame`
+  - [x] Créer une classe `BoardGame` (jeu de société) qui étend cette `AbstractGame`
 
 - Dans `6-objets.php` :
-  - [ ] Instancier 2 objets de type `AbstractGame` (un de type `VideoGame` et un de type `BoardGame`) avec des valeurs distinctes
-  - [ ] en afficher les valeurs de leurs propriétés avec des `echo`
-- [ ] Créer un commit avec vos changements
+  - [x] Instancier 2 objets de type `AbstractGame` (un de type `VideoGame` et un de type `BoardGame`) avec des valeurs distinctes
+  - [x] en afficher les valeurs de leurs propriétés avec des `echo`
+- [x] Créer un commit avec vos changements
 
 ## 7. Cours et bogues (2 points)
 
