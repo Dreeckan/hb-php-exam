@@ -35,7 +35,7 @@ $games = [
             ?>
         <tr>
             <td>
-                <a href="5-superglobales.php?price=<?= $game['price']; ?>">
+                <a href="5-superglobales.php?price=<?= $game['price'] ?>">
                     <?= $game['name']; ?>
                 </a>
             </td>

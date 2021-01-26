@@ -21,7 +21,11 @@ if (empty($_GET['price'])) {
         }
     }
 
-    if (isset($_POST['email']) && isset($_POST['gift']) && empty($errors)) {
+    if (
+        isset($_POST['email'])
+        && isset($_POST['gift'])
+        && empty($errors)
+        ) {
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['sum'] = $_POST['gift'] + $price;
         var_dump($_SESSION);

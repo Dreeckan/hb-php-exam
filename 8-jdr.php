@@ -18,7 +18,10 @@ echo 'Le combat démarre ! <br />';
 echo '</br>';
 $nbTour = 0;
 
-while (!$legolas->hasSurrendered() && !$gimli->hasSurrendered()) {
+while (
+    !$legolas->hasSurrendered()
+    && !$gimli->hasSurrendered()
+    ) {
     $nbTour++;
     echo 'Tour : '.$nbTour. '</br>';
     echo 'Points de vie ' . $gimli->getName() . ' : ' . $gimli->getLifePoints() . '</br>';
