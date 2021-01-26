@@ -4,7 +4,7 @@ namespace Rpg;
 
 class Dwarf extends AbstractCharacter
 {
-    public function __construct()
+    public function __construct($name)
     {
         parent::__construct($name)
         $this->setLifePoints(100);
