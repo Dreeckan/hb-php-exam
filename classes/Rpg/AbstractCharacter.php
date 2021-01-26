@@ -22,9 +22,9 @@ abstract class AbstractCharacter
 
     protected $lifePoints;
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
-        return $this->setName($name);
+        $this->name = $name;
     }
 
     /**
@@ -34,30 +34,6 @@ abstract class AbstractCharacter
     public function getName(): string
     {
         return $this->name;
-    }
-
-    /**
-     * Établir la valeur de name
-     *
-     * @return self
-     */
-
-    public function setName(string $name): AbstractCharacter
-    {
-        $this->name = $name;
-        return $this;
-    }
-
-    /**
-     * Établir la valeur de strength
-     *
-     * @return self
-     */
-
-    public function setStrength($strength)
-    {
-        $this->strength = $strength;
-        return $this;
     }
 
     /**
@@ -71,18 +47,8 @@ abstract class AbstractCharacter
     }
 
     /**
-     * Établir la valeur de lifePoints
-     *
-     * @return self
+     * @return bool
      */
-
-
-    public function setLifePoints($lifePoints)
-    {
-        $this->lifePoints = $lifePoints;
-
-        return $this;
-    }
 
     public function hasSurrendered(): bool
     {
@@ -93,13 +59,21 @@ abstract class AbstractCharacter
         }
     }
 
-    public function takeHit(int $strength): bool
+    /**
+     * @param int $strength
+     */
+
+    public function takeHit(int $strength)
     {
-        $this->lifePoints = $this->lifePoints - $strength;
+        $this->lifePoints -= $strength;
         return $this->hasSurrendered();
     }
 
-    public function attack(AbstractCharacter $character)
+    /**
+     * @param object
+     */
+
+    public function attack(object $character)
     {
         $alea = rand(1, 20);
         if ($alea <= $this->strength) {
