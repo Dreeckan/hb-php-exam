@@ -1,13 +1,15 @@
 <?php
 // Définition de l'objet comme un tableau et entrée des différentes valeurs.
 $objects = [
-    ['name' => 'test'],
-    ['name' => 42],
-    ['name' => 0.0],
+    ['index' => 'test'],
+    ['index' => 42],
+    ['index' => 0.0],
 ];
 
 
-$arr['name'] = 'ajout';
+$objects[] =  ['index' => 'ajout'];
+$objects['index'] = ['index' => 'ajout2'];
+
 ?>
 
 <table>
@@ -15,7 +17,9 @@ $arr['name'] = 'ajout';
         foreach ($objects as $object) { //Pour chaque objet, on met une ligne.
             ?>        
         <tr>
-            <td><?php echo $object['name']; ?></td>
+            <td>
+                <?php echo $object['index']; ?>
+            </td>
         </tr>
     <?php
         }
