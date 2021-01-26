@@ -58,14 +58,14 @@ Liste des exercices
 ## 4. PHP dans du html (3 points)
 
 - Dans `4-html.php` :
-  - [ ] Afficher le contenu du tableau PHP dans un tableau HTML (balise `<table>`). Pour cela, utiliser une boucle `foreach`.
+  - [X] Afficher le contenu du tableau PHP dans un tableau HTML (balise `<table>`). Pour cela, utiliser une boucle `foreach`.
   - Le tableau doit avoir 2 colonnes :
-    - [ ] Nom des jeux
-    - [ ] Prix (en euros)
-      - [ ] Afficher tous les prix avec le format français (ex : 12,45€) grâce à la fonction `number_format()` ([dont la documentation est ici](https://php.net/manual/fr/function.number-format.php))
-    - [ ] Pour les jeux coutant moins de 50€, ajouter le texte `(pas chère !)` juste après le prix
-  - [ ] Dans la colonne du nom, ajouter un lien sur le texte, pointant vers `5-superglobales.php`, en ajoutant le paramètre `price` avec pour valeur le prix du jeu
-- [ ] Créer un commit avec vos changements
+    - [X] Nom des jeux
+    - [X] Prix (en euros)
+      - [X] Afficher tous les prix avec le format français (ex : 12,45€) grâce à la fonction `number_format()` ([dont la documentation est ici](https://php.net/manual/fr/function.number-format.php))
+    - [X] Pour les jeux coutant moins de 50€, ajouter le texte `(pas chère !)` juste après le prix
+  - [X] Dans la colonne du nom, ajouter un lien sur le texte, pointant vers `5-superglobales.php`, en ajoutant le paramètre `price` avec pour valeur le prix du jeu
+- [X] Créer un commit avec vos changements
   
 ## 5. Superglobales (4 points)
 
