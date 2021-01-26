@@ -54,8 +54,4 @@ if ($error = 0) {
     $_SESSION['email'] = $emailValide;
 }
 
-
-// var_dump($error);
-// var_dump($emailValide);
-// var_dump($donValide);
 var_dump($_SESSION['price'], $_SESSION['email'], $_SESSION['sum']);
