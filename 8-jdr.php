@@ -16,28 +16,36 @@ $legolas = new Elf('Legolas');
 
 echo 'Le combat démarre ! <br />';
 
-$damage = $legolas->attack($gimli);
+while ($legolas->hasSurrendered() == false || $gimli->hasSurrendered() == false) {
+    $damage = $legolas->attack($gimli);
 
-echo 'Legolas attaque Gimli ! <br />';
-if ($damage > 0) {
-    echo "Legolas inflige $damage dégâts à Gimli ! <br />";
-} else {
-    echo "Legolas a raté son attaque ! <br />";
-}
-
-if (!$gimli->hasSurrendered()) {
-    $damage = $gimli->attack($legolas);
-
-    echo 'Gimli attaque Legolas ! <br />';
+    echo 'Legolas attaque Gimli ! <br />';
     if ($damage > 0) {
-        echo "Gimli inflige $damage dégâts à Legolas ! <br />";
+        $gimli->setLifePoints($gimli->getlifePoints() - $damage);
+        echo 'Legolas inflige '.$damage.' dégâts à Gimli ! <br />
+        Il reste '.$gimli->getLifePoints().' points de vie à Gimli!<br />';
     } else {
-        echo "Gimli a raté son attaque ! <br />";
+        echo "Legolas a raté son attaque ! <br />";
     }
 
-    if ($legolas->hasSurrendered()) {
-        echo "Legolas abandonne ! Gimli a gagné !<br />";
+    if (!$gimli->hasSurrendered()) {
+        $damage = $gimli->attack($legolas);
+
+        echo 'Gimli attaque Legolas ! <br />';
+        if ($damage > 0) {
+            $legolas->setLifePoints($legolas->getlifePoints() - $damage);
+            echo 'Gimli inflige '.$damage.' dégâts à Legolas ! <br />
+            Il reste '.$legolas->getLifePoints().' points de vie à Legolas!<br />';
+        } else {
+            echo "Gimli a raté son attaque ! <br />";
+        }
     }
-} else {
-    echo "Gimli abandonne ! Legolas a gagné !<br />";
 }
+    if ($legolas->hasSurrendered() == true) {
+        echo "Legolas abandonne ! Gimli a gagné !<br />";
+    } elseif ($gimli->hasSurrendered() == true) {
+        echo "Gimli abandonne ! Legolas a gagné !<br />";
+    }
+
+var_dump($gimli);
+var_dump($legolas);

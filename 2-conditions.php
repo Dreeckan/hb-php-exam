@@ -27,3 +27,13 @@ $shoes = [
         'stock' => 32,
     ],
 ];
+
+foreach ($shoes as $shoe) {
+    if ($shoe['price'] > 100) {
+        $exclamPoint = "!";
+    } else {
+        $exclamPoint = ' ';
+    }
+
+    echo ''.$exclamPoint.''.$shoe['name'].''.number_format($shoe['price'], 2, ',', ' ').'€</td>'.$shoe['stock'].' en stock </br></br>';
+}
