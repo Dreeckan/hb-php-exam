@@ -46,17 +46,17 @@ Liste des exercices
 - Dans `3-fonctions.php` :
 
   - Créer une fonction `fonctionAffine` qui
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
-    - [ ] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
+    - [x] prend un nombre entier `n` en paramètre
+    - [x] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
+    - [x] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
   - Créer une fonction `suiteNPlusUn` qui
 
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
+    - [x] prend un nombre entier `n` en paramètre
+    - [x] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
 
-  - [ ] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
+  - [x] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
 
-- [ ] Créer un commit avec vos changements
+- [x] Créer un commit avec vos changements
 
 ## 4. PHP dans du html (3 points)
 
