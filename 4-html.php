@@ -25,16 +25,26 @@ $games = [
 ?>
 
 <table>
-    <tr>
-        <th>Nom des jeux</th>
-        <th>Prix</th>
-    <tr>
-    <tr><?php foreach ($games as $game) {
-    $name = $value['name'];
-    $price = $value['price'];
-}
- ?>
- </tr>
-    <tr><?php $game['price'] ?></tr>
+        <tr>
+            <th>Nom du jeu</th>
+            <th>Prix</th>
+        </tr>
+<tbody>
+    <?php
+    foreach ($games as $game) {
+        $name = $game['name'];
+        $price = $game['price']; ?>
+        <tr>
+            <td><a href="5-superglobales.php?price=<?php echo $price; ?>">
+                    <?php echo $name ?></a></td>
+            <td><?php echo number_format($price, 2, ',', ' ');
+        echo "€";
+        if ($price < 50) {
+            echo " pas chère !";
+        } ?></td>
+        </tr>
+    <?php
+    }
+    ?>
+</tbody>
 </table>
-
