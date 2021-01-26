@@ -26,11 +26,11 @@ Liste des exercices
 ## 1. Utilisation des variables (1 point)
 
 - Dans `1-variables.php` :
-  - [ ] Déclarer un tableau nommé `objects`, contenant les valeurs suivantes : `test`, `42`, `0.0`
-  - [ ] Ajouter un élément (après la déclaration) : `ajout`
-  - [ ] Ajouter un élément (après la déclaration) `ajout2` avec l'index `index`
-  - [ ] Afficher, avec un `echo`, le contenu de l'index `index` dans le tableau
-- [ ] Créer un commit avec vos changements
+  - [X] Déclarer un tableau nommé `objects`, contenant les valeurs suivantes : `test`, `42`, `0.0`
+  - [X] Ajouter un élément (après la déclaration) : `ajout`
+  - [X] Ajouter un élément (après la déclaration) `ajout2` avec l'index `index`
+  - [X] Afficher, avec un `echo`, le contenu de l'index `index` dans le tableau
+- [X] Créer un commit avec vos changements
   
 ## 2. Conditions et boucles (1 point)
 
