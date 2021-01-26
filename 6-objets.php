@@ -5,9 +5,9 @@ spl_autoload_register(function ($class) {
     require_once "classes/$class.php";
 });
 
-use game\AbstractGame;
-use game\VideoGame;
-use game\BoardGame;
+use Game\AbstractGame;
+use Game\VideoGame;
+use Game\BoardGame;
 
 $videoGame = new VideoGame();
 $videoGame->setName('Secret of Mana');
