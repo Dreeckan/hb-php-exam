@@ -22,3 +22,19 @@ $games = [
         'price' => 4,
     ],
 ];
+?>
+
+<table>
+    <tr>
+        <th>Nom des jeux</th>
+        <th>Prix</th>
+    <tr>
+    <tr><?php foreach ($games as $game) {
+    $name = $value['name'];
+    $price = $value['price'];
+}
+ ?>
+ </tr>
+    <tr><?php $game['price'] ?></tr>
+</table>
+
