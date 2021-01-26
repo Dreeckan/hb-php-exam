@@ -97,7 +97,7 @@ Liste des exercices
 - Dans `6-objets.php` :
   - [X] Instancier 2 objets de type `AbstractGame` (un de type `VideoGame` et un de type `BoardGame`) avec des valeurs distinctes
   - [X] en afficher les valeurs de leurs propriétés avec des `echo`
-- [ ] Créer un commit avec vos changements
+- [X] Créer un commit avec vos changements
 
 ## 7. Cours et bogues (2 points)
 
@@ -139,7 +139,7 @@ class UseTestTrait
     use HasTestTrait;
 }
 ```
-- [ ] Solution 3
+- [X] Solution 3
 ```php
 // Traits/HasTestTrait.php
 namespace Traits;
@@ -175,7 +175,7 @@ class Test implements TestInterface
 ```
 
 - [ ] Il manque un namespace dans la classe `Test`
-- [ ] La classe `Test` n'a pas de méthode `getTest()`
+- [X] La classe `Test` n'a pas de méthode `getTest()`
 - [ ] Il manque un `use` dans la classe `Test`
 
 ## 8. Jeux de rôle (5 points)
@@ -185,34 +185,34 @@ Maintenant, nous allons coder un mini-jeu de rôle. Deux personnages, Legolas et
 
 - Dans le dossier `classes/Rpg` ( /!\ le sous-dossier est important)
   - Créer une classe abstraite `AbstractCharacter` dans son propre fichier avec les propriétés suivantes (définies en `protected`)
-    - [ ] `name` de type `string`
-    - [ ] `strength` (force) de type `int`
-    - [ ] `lifePoints` (points de vie) de type `int`
+    - [X] `name` de type `string`
+    - [X] `strength` (force) de type `int`
+    - [X] `lifePoints` (points de vie) de type `int`
     
   - Créer des méthodes pour créer / manipuler nos personnages
-    - [ ] Un constructeur, prenant en paramètre le nom du personnage (et le mettant dans la propriété `name` de l'objet)
-    - [ ] `getName()` retournant le nom du personnage
-    - [ ] `getLifePoints()` retournant le nombre de points de vie du personnage (`lifePoints`)
-    - [ ] `hasSurrendered()` (a abandonné) qui renvoie `true` si le personnage a moins de 10 `lifePoints`, false sinon
-    - [ ] `takeHit()` (prendre un coup) qui
-      - [ ] prend en paramètre un entier `strength`
-      - [ ] enlève `strength` (exemple 5) `lifePoints` (points de vie) au personnage touché
-      - [ ] renvoie le résultat de la méthode `hasSurrendered()` (booléen)
+    - [X] Un constructeur, prenant en paramètre le nom du personnage (et le mettant dans la propriété `name` de l'objet)
+    - [X] `getName()` retournant le nom du personnage
+    - [X] `getLifePoints()` retournant le nombre de points de vie du personnage (`lifePoints`)
+    - [X] `hasSurrendered()` (a abandonné) qui renvoie `true` si le personnage a moins de 10 `lifePoints`, false sinon
+    - [X] `takeHit()` (prendre un coup) qui
+      - [X] prend en paramètre un entier `strength`
+      - [X] enlève `strength` (exemple 5) `lifePoints` (points de vie) au personnage touché
+      - [X] renvoie le résultat de la méthode `hasSurrendered()` (booléen)
     - [ ] `attack()` (attaquer) qui 
-      - [ ] prend en paramètre un autre personnage (objet de type `AbstractCharacter`)
+      - [X] prend en paramètre un autre personnage (objet de type `AbstractCharacter`)
       - fait un lancé de dé pour savoir si le personnage touche l'autre : 
-        - [ ] Utilise la fonction `rand()` de php ([dont la documentation est ici](https://www.php.net/manual/fr/function.rand.php)), pour générer un nombre entre 1 et 20
-        - [ ] Si ce nombre est inférieur ou égale à la force du personnage, alors on va appeler la méthode `takeHit()` de l'autre personnage, en passant la `strength` du personnage actuel en paramètre
-        - [ ] Sinon, le personnage a raté
-      - [ ] Retourner le nombre de dégâts infligés
+        - [X] Utilise la fonction `rand()` de php ([dont la documentation est ici](https://www.php.net/manual/fr/function.rand.php)), pour générer un nombre entre 1 et 20
+        - [X] Si ce nombre est inférieur ou égale à la force du personnage, alors on va appeler la méthode `takeHit()` de l'autre personnage, en passant la `strength` du personnage actuel en paramètre
+        - [X] Sinon, le personnage a raté
+      - [X] Retourner le nombre de dégâts infligés
   
   - Créer 2 types de personnages, deux classes héritant de `AbstractCharacter` :
-    - [ ] `Dwarf` initialisé avec les valeurs suivantes :
-      - [ ] `strength` à 15
-      - [ ] `lifePoints` à 100
-    - [ ] `Elf` initialisé avec les valeurs suivantes :
-      - [ ] `strength` à 17
-      - [ ] `lifePoints` à 75
+    - [X] `Dwarf` initialisé avec les valeurs suivantes :
+      - [X] `strength` à 15
+      - [X] `lifePoints` à 100
+    - [X] `Elf` initialisé avec les valeurs suivantes :
+      - [X] `strength` à 17
+      - [X] `lifePoints` à 75
     - [ ] Conserver le comportement du constructeur de la classe parente (pour se faire, appeler `parent::__construct($name)` dans les constructeurs de `Dwarf` et `Elf`)
   
 - Dans `8-jdr.php` :

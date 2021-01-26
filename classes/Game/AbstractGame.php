@@ -2,7 +2,7 @@
 
 namespace game;
 
-abstract class abstractGame  //une classe abstraite est une classe ne pouvant être instanciée. Elle sert de "base/modèle" à d'autre objets
+abstract class AbstractGame  //une classe abstraite est une classe ne pouvant être instanciée. Elle sert de "base/modèle" à d'autre objets
 {
     /**
     * @var string
@@ -34,11 +34,5 @@ abstract class abstractGame  //une classe abstraite est une classe ne pouvant ê
     public function setPrice($price)
     {
         $this->price = $price;
-    }
-
-
-    public function __construct()
-    {
-        $this->countBook = 200;
     }
 } 
