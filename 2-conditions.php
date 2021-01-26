@@ -27,3 +27,35 @@ $shoes = [
         'stock' => 32,
     ],
 ];
+?>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prix</th>
+        <th>Quantité</th>
+    </tr>
+
+    <?php
+        foreach ($shoes as $shoe) {
+            ?>
+        <tr>
+            <td>
+                <?= $shoe['name']; ?>
+            </td>
+            <td>
+                <?php
+                if ($shoe['price'] > 100) {
+                    echo number_format($shoe['price'], 2, ',', ' ').' €'. ' !';
+                } else {
+                    echo number_format($shoe['price'], 2, ',', ' ').' €' ;
+                } ?>
+            </td>
+            <td>
+                <?= $shoe['stock']; ?>
+            </td>
+        </tr>
+    <?php
+        } ?>
+
+</table>
