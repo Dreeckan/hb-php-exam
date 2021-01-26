@@ -27,3 +27,11 @@ $shoes = [
         'stock' => 32,
     ],
 ];
+
+foreach ($shoes as $shoe) {
+    echo $shoe['name'], $shoe['price'];
+    if ($shoe['price'] > 100) {
+        echo "!";
+    }
+    echo $shoe['stock']. '<br/>';
+};
