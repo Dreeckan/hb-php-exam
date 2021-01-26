@@ -6,7 +6,7 @@ $games = [
         'price' => 45,
     ],
     [
-        'name'  => 'Cyberpubnk 2077 - édition avec carte graphique',
+        'name'  => 'Cyberpunk 2077 - édition avec carte graphique',
         'price' => 850,
     ],
     [
