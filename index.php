@@ -19,3 +19,10 @@
     include '3-fonctions.php';
 
     echo '<hr />';
+
+    /*
+        EXO-3
+    */
+    include '4-html.php';
+
+    echo '<hr />';
