@@ -73,17 +73,17 @@ Liste des exercices
 ## 5. Superglobales (4 points)
 
 - Dans `5-superglobales.php` :
-  - [ ] Récupérer la valeur de `price` contenu dans l'url.
-  - [ ] Vérifier que `price` n'est pas vide et la mettre dans l'index `price` de la session.
+  - [x] Récupérer la valeur de `price` contenu dans l'url.
+  - [x] Vérifier que `price` n'est pas vide et la mettre dans l'index `price` de la session.
   - le formulaire du fichier doit avoir 2 champs valides :
-    - [ ] email (type email)
-    - [ ] gift (type nombre)
-  - [ ] Vérifier que l'email entré est valide en utilisant la fonction `filter_var` ([dont la documentation est ici](https://www.php.net/manual/fr/function.filter-var))
-    - [ ] Si ça n'est pas le cas, afficher un message d'erreur : "Veuillez entrer un email valide"
+    - [x] email (type email)
+    - [x] gift (type nombre)
+  - [x] Vérifier que l'email entré est valide en utilisant la fonction `filter_var` ([dont la documentation est ici](https://www.php.net/manual/fr/function.filter-var))
+    - [x] Si ça n'est pas le cas, afficher un message d'erreur : "Veuillez entrer un email valide"
   - Si les deux champs sont valides, ajouter ces entrées dans la session
-    - [ ] `sum` qui va contenir la somme du `price` passé en paramètre de la page et de la valeur du champ `gift` du formulaire
-    - [ ] `email` qui va contenir la valeur du champ `email` du formulaire
-- [ ] Créer un commit avec vos changements
+    - [x] `sum` qui va contenir la somme du `price` passé en paramètre de la page et de la valeur du champ `gift` du formulaire
+    - [x] `email` qui va contenir la valeur du champ `email` du formulaire
+- [x] Créer un commit avec vos changements
 
 ## 6. Objets (4 points)
 
