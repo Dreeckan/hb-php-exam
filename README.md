@@ -26,82 +26,82 @@ Liste des exercices
 ## 1. Utilisation des variables (1 point)
 
 - Dans `1-variables.php` :
-  - [ ] Déclarer un tableau nommé `objects`, contenant les valeurs suivantes : `test`, `42`, `0.0`
-  - [ ] Ajouter un élément (après la déclaration) : `ajout`
-  - [ ] Ajouter un élément (après la déclaration) `ajout2` avec l'index `index`
-  - [ ] Afficher, avec un `echo`, le contenu de l'index `index` dans le tableau
-- [ ] Créer un commit avec vos changements
+  - [x] Déclarer un tableau nommé `objects`, contenant les valeurs suivantes : `test`, `42`, `0.0`
+  - [x] Ajouter un élément (après la déclaration) : `ajout`
+  - [x] Ajouter un élément (après la déclaration) `ajout2` avec l'index `index`
+  - [x] Afficher, avec un `echo`, le contenu de l'index `index` dans le tableau
+- [x] Créer un commit avec vos changements
   
 ## 2. Conditions et boucles (1 point)
 
 - Dans `2-conditions.php` :
-  - [ ] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
-  - [ ] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
-- [ ] Créer un commit avec vos changements
+  - [x] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
+  - [x] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
+- [x] Créer un commit avec vos changements
   
 ## 3. Fonctions (2 points)
 
 - Dans `3-fonctions.php` :
   - Créer une fonction `fonctionAffine` qui 
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
-    - [ ] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
+    - [x] prend un nombre entier `n` en paramètre
+    - [x] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
+    - [x] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
     
   - Créer une fonction `suiteNPlusUn` qui 
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
+    - [x] prend un nombre entier `n` en paramètre
+    - [x] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
   
-  - [ ] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
+  - [x] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
 
-- [ ] Créer un commit avec vos changements
+- [x] Créer un commit avec vos changements
   
 ## 4. PHP dans du html (3 points)
 
 - Dans `4-html.php` :
   - [ ] Afficher le contenu du tableau PHP dans un tableau HTML (balise `<table>`). Pour cela, utiliser une boucle `foreach`.
   - Le tableau doit avoir 2 colonnes :
-    - [ ] Nom des jeux
-    - [ ] Prix (en euros)
-      - [ ] Afficher tous les prix avec le format français (ex : 12,45€) grâce à la fonction `number_format()` ([dont la documentation est ici](https://php.net/manual/fr/function.number-format.php))
-    - [ ] Pour les jeux coutant moins de 50€, ajouter le texte `(pas chère !)` juste après le prix
-  - [ ] Dans la colonne du nom, ajouter un lien sur le texte, pointant vers `5-superglobales.php`, en ajoutant le paramètre `price` avec pour valeur le prix du jeu
-- [ ] Créer un commit avec vos changements
+    - [x] Nom des jeux
+    - [x] Prix (en euros)
+      - [x] Afficher tous les prix avec le format français (ex : 12,45€) grâce à la fonction `number_format()` ([dont la documentation est ici](https://php.net/manual/fr/function.number-format.php))
+    - [x] Pour les jeux coutant moins de 50€, ajouter le texte `(pas chère !)` juste après le prix
+  - [x] Dans la colonne du nom, ajouter un lien sur le texte, pointant vers `5-superglobales.php`, en ajoutant le paramètre `price` avec pour valeur le prix du jeu
+- [x] Créer un commit avec vos changements
   
 ## 5. Superglobales (4 points)
 
 - Dans `5-superglobales.php` :
-  - [ ] Récupérer la valeur de `price` contenu dans l'url.
-  - [ ] Vérifier que `price` n'est pas vide et la mettre dans l'index `price` de la session.
+  - [x] Récupérer la valeur de `price` contenu dans l'url.
+  - [x] Vérifier que `price` n'est pas vide et la mettre dans l'index `price` de la session.
   - le formulaire du fichier doit avoir 2 champs valides :
-    - [ ] email (type email)
-    - [ ] gift (type nombre)
-  - [ ] Vérifier que l'email entré est valide en utilisant la fonction `filter_var` ([dont la documentation est ici](https://www.php.net/manual/fr/function.filter-var))
-    - [ ] Si ça n'est pas le cas, afficher un message d'erreur : "Veuillez entrer un email valide"
+    - [x] email (type email)
+    - [x] gift (type nombre)
+  - [x] Vérifier que l'email entré est valide en utilisant la fonction `filter_var` ([dont la documentation est ici](https://www.php.net/manual/fr/function.filter-var))
+    - [x] Si ça n'est pas le cas, afficher un message d'erreur : "Veuillez entrer un email valide"
   - Si les deux champs sont valides, ajouter ces entrées dans la session
-    - [ ] `sum` qui va contenir la somme du `price` passé en paramètre de la page et de la valeur du champ `gift` du formulaire
-    - [ ] `email` qui va contenir la valeur du champ `email` du formulaire
-- [ ] Créer un commit avec vos changements
+    - [x] `sum` qui va contenir la somme du `price` passé en paramètre de la page et de la valeur du champ `gift` du formulaire
+    - [x] `email` qui va contenir la valeur du champ `email` du formulaire
+- [x] Créer un commit avec vos changements
 
 ## 6. Objets (4 points)
 
 - Dans le dossier `classes/Game` ( /!\ le sous-dossier est important)
   - Créer une classe abstraite `AbstractGame` dans son propre fichier avec les propriétés suivantes (définies en `protected`)
-    - [ ] `name` de type `string`
-    - [ ] `price` de type `float`
-  - [ ] Écrire les getters et les setters de ces propriétés
-  - [ ] En commentaire de la classe, expliquer avec vos mots ce qu'est une classe abstraite
-  - [ ] Ajouter des annotations (commentaires) aux propriétés et aux méthodes
-  - [ ] Créer une classe `VideoGame` (jeu vidéo) qui étend cette `AbstractGame`
-  - [ ] Créer une classe `BoardGame` (jeu de société) qui étend cette `AbstractGame`
+    - [x] `name` de type `string`
+    - [x] `price` de type `float`
+  - [x] Écrire les getters et les setters de ces propriétés
+  - [x] En commentaire de la classe, expliquer avec vos mots ce qu'est une classe abstraite
+  - [x] Ajouter des annotations (commentaires) aux propriétés et aux méthodes
+  - [x] Créer une classe `VideoGame` (jeu vidéo) qui étend cette `AbstractGame`
+  - [x] Créer une classe `BoardGame` (jeu de société) qui étend cette `AbstractGame`
 
 - Dans `6-objets.php` :
-  - [ ] Instancier 2 objets de type `AbstractGame` (un de type `VideoGame` et un de type `BoardGame`) avec des valeurs distinctes
-  - [ ] en afficher les valeurs de leurs propriétés avec des `echo`
-- [ ] Créer un commit avec vos changements
+  - [x] Instancier 2 objets de type `AbstractGame` (un de type `VideoGame` et un de type `BoardGame`) avec des valeurs distinctes
+  - [x] Afficher les valeurs de leurs propriétés avec des `echo`
+- [x] Créer un commit avec vos changements
 
 ## 7. Cours et bogues (2 points)
 
-Pour chacune des questions, cocher **la** case qui correspond (il y a toujours une seule bonne réponse). Pour cocher une cas, remplacer le `[ ]` à côté de la réponse voulue par `[x]`.
+Pour chacune des questions, cocher **la** case qui correspond (il y a toujours une seule bonne réponse). Pour cocher une case, remplacer le `[ ]` à côté de la réponse voulue par `[x]`.
 Pour tous les exemples utilisant des objets, nous partons du principe qu'il y a un fichier chargé de l'autoload (appel automatique de `require_once` sur les fichiers de nos classes) et qu'il fonctionne à tous les coups.
 
 ### 7.1. Quelle est la bonne manière d'utiliser un trait ?
@@ -122,7 +122,7 @@ class UseTestTrait
 }
 ```
 
-- [ ] Solution 2
+- [x] Solution 2
 ```php
 // Traits/HasTestTrait.php
 namespace Traits;
@@ -158,7 +158,7 @@ class UseTestTrait
 ### 7.2. Ce code plante, pourquoi ?
 
 ```php
-// fichier Interfaces/Test.php
+// fichier Interfaces/TestInterface.php
 namespace Interfaces;
 
 interface TestInterface
@@ -175,7 +175,7 @@ class Test implements TestInterface
 ```
 
 - [ ] Il manque un namespace dans la classe `Test`
-- [ ] La classe `Test` n'a pas de méthode `getTest()`
+- [x] La classe `Test` n'a pas de méthode `getTest()`
 - [ ] Il manque un `use` dans la classe `Test`
 
 ## 8. Jeux de rôle (5 points)
