@@ -27,3 +27,14 @@ $shoes = [
         'stock' => 32,
     ],
 ];
+
+foreach ($shoes as $shoe) {
+    if ($shoe['price'] > 100) {
+        $exclamation = '!';
+    } else {
+        $exclamation = null;
+    }
+    echo $shoe['name'].' <br /> '
+        .$shoe['price'].$exclamation.' <br /> '
+        .$shoe['stock'].'<br />';
+}
