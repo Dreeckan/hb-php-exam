@@ -37,9 +37,9 @@ Liste des exercices
 ## 2. Conditions et boucles (1 point)
 
 - Dans `2-conditions.php` :
-  - [ ] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
-  - [ ] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
-- [ ] Créer un commit avec vos changements
+  - [x] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
+  - [x] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
+- [x] Créer un commit avec vos changements
 
 ## 3. Fonctions (2 points)
 
