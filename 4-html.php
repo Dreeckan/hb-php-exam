@@ -22,3 +22,29 @@ $games = [
         'price' => 4,
     ],
 ];
+
+?>
+
+<table>
+   <tr>
+       <th>Nom des jeux</th>
+       <th>Prix (en euros)</th>
+   </tr>
+   <?php
+   function AfficherPrice($price)
+   {
+       if ($price < 50) {
+           return number_format($price, 2, ",", " ")." € (pas chère !)";
+       }
+       return number_format($price, 2, ",", " ")." €";
+   }
+        foreach ($games as $game) {
+            echo '<tr>
+                    <td>
+                        <a href="5-superglobales.php?price='.$game["price"].'">'.$game['name'].'</a>
+                    </td>
+                    <td>'.AfficherPrice($game['price']).'</td>
+                </tr>';
+        }
+   ?>
+</table>
