@@ -35,25 +35,25 @@ Liste des exercices
 ## 2. Conditions et boucles (1 point)
 
 - Dans `2-conditions.php` :
-  - [ ] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
-  - [ ] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
-- [ ] Créer un commit avec vos changements
+  - [X] Utiliser `echo` et `foreach` pour afficher toutes les valeurs du tableau `$shoes` (défini dans le fichier) et les séparer par des sauts de ligne (`<br />`)
+  - [X] Dans cette boucle, si l'index `price` d'un élément est strictement supérieur à `100`, ajouter un point d'exclamation sur sa ligne
+- [X] Créer un commit avec vos changements
   
 ## 3. Fonctions (2 points)
 
 - Dans `3-fonctions.php` :
   - Créer une fonction `fonctionAffine` qui 
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
-    - [ ] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
+    - [X] prend un nombre entier `n` en paramètre
+    - [X] Retourne le résultat du calcul `4n + 6` si `n` est strictement supérieur à 5
+    - [X] Retourne le résultat du calcul `3n - 2` si `n` est inférieur ou égale à 5
     
   - Créer une fonction `suiteNPlusUn` qui 
-    - [ ] prend un nombre entier `n` en paramètre
-    - [ ] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
+    - [X] prend un nombre entier `n` en paramètre
+    - [X] renvoie la somme des entiers de 1 à `n` (1 + 2 + 3 + ... + n)
   
-  - [ ] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
+  - [X] Ajouter 3 appels de chacune de ces fonctions et en afficher les résultats avec la fonction `var_dump()`
 
-- [ ] Créer un commit avec vos changements
+- [X] Créer un commit avec vos changements
   
 ## 4. PHP dans du html (3 points)
 
