@@ -31,9 +31,14 @@ if (isset($_POST['email'])) {
         $errors[] = 'Veuillez entrer un email valide';
     }
 }
-    if (isset($_POST['gift']) && isset($_POST['mail'])) {
+    if (isset($_POST['gift']) && isset($_POST['email'])) {
         $_SESSION['gift'] = $_SESSION['sum'] = $_POST['gift'] + $price;
-        $_SESSION['mail'] = $email;
+        $_SESSION['email'] = $email;
+        echo $_SESSION['sum'];
+        echo $_SESSION['email'];
     }
+
+    
+
 
 ?>
