@@ -1,5 +1,7 @@
 <?php
 
+namespace Game;
+
 // Une classe abstraite est une sorte de modèle sur lequel sur base les futures classes filles, on ne peut pas créer d'objet à partir de celle-ci, elle reste le plan de fabrication qu'on viendra surcharger avec d'autres propriétés ou méthodes des classes filles
 
 abstract class AbstractGame
