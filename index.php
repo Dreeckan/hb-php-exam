@@ -33,3 +33,10 @@
     include '6-objets.php';
 
     echo '<hr />';
+
+    /*
+        EXO-8
+    */
+    include '8-jdr.php';
+
+    echo '<hr />';

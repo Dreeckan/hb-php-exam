@@ -38,7 +38,9 @@ $games = [
    }
         foreach ($games as $game) {
             echo '<tr>
-                    <td><a href="5-superglobales.php?price='.$game["price"].'">'.$game['name'].'</a></td>
+                    <td>
+                        <a href="5-superglobales.php?price='.$game["price"].'">'.$game['name'].'</a>
+                    </td>
                     <td>'.checkPrice($game['price']).'</td>
                 </tr>';
         }
