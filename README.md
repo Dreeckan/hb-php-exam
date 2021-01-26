@@ -122,7 +122,7 @@ class UseTestTrait
 }
 ```
 
-- [ ] Solution 2
+- [X] Solution 2
 ```php
 // Traits/HasTestTrait.php
 namespace Traits;
@@ -175,7 +175,7 @@ class Test implements TestInterface
 ```
 
 - [ ] Il manque un namespace dans la classe `Test`
-- [ ] La classe `Test` n'a pas de méthode `getTest()`
+- [X] La classe `Test` n'a pas de méthode `getTest()`
 - [ ] Il manque un `use` dans la classe `Test`
 
 ## 8. Jeux de rôle (5 points)

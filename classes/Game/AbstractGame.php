@@ -20,7 +20,7 @@ abstract class AbstractGame //Une classe qui ne peut pas être instancié ! Elle
     /**
      * Get the value of name
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -30,7 +30,7 @@ abstract class AbstractGame //Une classe qui ne peut pas être instancié ! Elle
      *
      * @return  self
      */
-    public function setName($name)
+    public function setName($name): AbstractGame
     {
         $this->name = $name;
 
@@ -41,7 +41,7 @@ abstract class AbstractGame //Une classe qui ne peut pas être instancié ! Elle
     /**
      * Get the value of price
      */
-    public function getPrice()
+    public function getPrice(): float
     {
         return $this->price;
     }
@@ -51,7 +51,7 @@ abstract class AbstractGame //Une classe qui ne peut pas être instancié ! Elle
      *
      * @return  self
      */
-    public function setPrice($price)
+    public function setPrice($price): AbstractGame
     {
         $this->price = $price;
 
