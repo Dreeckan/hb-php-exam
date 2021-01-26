@@ -1,6 +1,6 @@
 <?php
 
-$objects = ['test','42',0.0];
+$objects = ['test', '42', 0.0];
 
 $objects[] = 'ajout';
 
